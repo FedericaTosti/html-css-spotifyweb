@@ -1,0 +1,459 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+
+/* main */
+main{
+  display: flex;
+  direction: column;
+  overflow-y: scroll;
+}
+
+/* nav */
+nav{
+  background-color: black;
+  width: 250px;
+  position: fixed;
+  height: calc(100vh - 100px);
+}
+
+nav img{
+  width: 25px;
+  padding-right: 6px;
+}
+
+.logo img{
+  width: 80%;
+  padding: 20px;
+}
+
+.link{
+  padding: 20px;
+  opacity: 0.5;
+}
+
+.playlist{
+  padding: 20px;
+}
+
+.nome-playlist{
+  overflow: auto;
+  max-height: 150px;
+}
+
+.playlist h4{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.playlist a{
+  opacity: 0.5;
+}
+
+.playlist span:first-child{
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 11px;
+}
+
+.playlist span{
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.playlist ul{
+overflow-y: auto;
+}
+
+.playlist ul li{
+  padding: 6px;
+  overflow: auto;
+}
+
+.utente{
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 20px;
+  margin-bottom: 100px;
+}
+
+.utente .installa{
+  border-bottom: 1px solid;
+  margin-bottom: 8px;
+  opacity: 0.5;
+  width: 210px;
+}
+
+.utente-img{
+  margin: 5px 0;
+}
+
+.utente-img img{
+  background-color: grey;
+  border-radius: 100px;
+}
+
+
+/* main centrale */
+.main-centrale{
+  background: #141922;
+  width: calc(100% - 250px);
+  margin-bottom: 100px;
+  margin-left: 250px;
+}
+
+/* upgrade */
+.upgrade{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: calc(100vw - 250px);
+  height: 90px;
+  text-align: right;
+  padding: 22px 15px;
+  z-index: 1;
+}
+
+button{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+/* main list */
+.main-list{
+  padding-top: 100px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.main-list ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-list ul li{
+  font-size: 15px;
+  padding: 3px;
+  opacity: 0.5;
+}
+
+.main-list ul li:hover{
+  opacity: 1;
+}
+
+/* album */
+.recently-played .creato .artisti{
+  margin: 20px;
+}
+
+.creato p, .artisti p{
+  padding: 0 15px 15px;
+  opacity: 0.5;
+}
+
+.album h3{
+  font-size: 23px;
+  padding: 15px;
+}
+
+.album img{
+  width: 160px;
+}
+
+.cover-menu{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.cover{
+  flex-basis: calc(100% / 6);
+  padding-left: 15px;
+}
+
+.img{
+  position: relative;
+  width: 160px;
+  cursor: pointer;
+}
+
+.play{
+  position: absolute;
+  background-color: black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.play .far{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.play:hover{
+  opacity: 0.8;
+}
+
+.play .far:hover{
+  opacity: 1;
+  font-size: 60px;
+}
+
+.cover h4{
+  text-align: center;
+  padding: 5px 10px 5px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cover p{
+  text-align: center;
+  padding: 5px 10px 5px 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.artisti img{
+  border-radius: 100%;
+}
+
+.artisti .play{
+  border-radius: 100%;
+}
+
+
+/* footer */
+footer{
+  height: 100px;
+  width: 100vw;
+  background: #282828;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+.sez-footer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* sez album */
+.sez-album{
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sez-album-img{
+  width: 20%;
+}
+
+.sez-album-img img{
+  width: 85%;
+  padding: 12px;
+}
+
+.titolo h6{
+  font-size: 16px;
+  padding-right: 50px;
+}
+
+.titolo p{
+  font-size: 13px;
+  opacity: 0.5;
+  padding-right: 50px;
+}
+
+.titolo p:hover{
+  opacity: 1;
+}
+
+.titolo a:hover{
+  text-decoration: underline;
+}
+
+.icone a{
+  padding-right: 8px;
+  opacity: 0.5;
+}
+
+.icone a:hover{
+  opacity: 1;
+}
+
+/* sez play */
+.sez-play{
+  width: 50%;
+}
+
+.sez-play .icone{
+  width: 50%;
+  margin-left: 25%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.durata img{
+  width: 250px;
+  height: 4px;
+}
+
+.sez-play .fas, .sez-play .far{
+  cursor: pointer;
+  padding: 0 7px;
+}
+
+.durata{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sez volume */
+.sez-volume img{
+  width: 180px;
+  height: 3px;
+}
+
+.sez-volume .icone{
+  width: 50%;
+  margin-right: 15%;
+  padding: 23px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.sez-volume .fas{
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width:599px){
+
+  nav{
+    width: 50px;
+  }
+
+  .main-centrale{
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+
+  .upgrade{
+    width: calc(100vw - 50px);
+  }
+
+  .logo img:first-child{
+    display: none;
+  }
+
+  .logo img:last-child{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  .link ul li span{
+    display: none;
+  }
+
+  .link{
+    padding: 0;
+  }
+
+  .link ul li img{
+    width: 35px;
+    height: 35px;
+    margin: 5px 0 5px 11px;
+  }
+
+  .playlist{
+    display: none;
+  }
+
+  .utente{
+    padding: 0;
+    margin: 0;
+  }
+
+  .utente .installa span, .utente-img span{
+    display: none;
+  }
+
+  .utente .installa{
+    border: none;
+  }
+
+  .utente img{
+    width: 25px;
+    height: 25px;
+    margin-left: 12px;
+  }
+
+  .utente .installa img{
+    margin-top: 50px;
+  }
+}
+
+
+@media screen and (min-width:600px){
+
+  .logo img:last-child{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:800px){
+
+  .main-list{
+    margin-left: 5%;
+  }
+}
+
+
+@media screen and (max-width:720px){
+  .main-list ul li{
+    font-size: 10px;
+    margin: 1px;
+  }
+}
